@@ -1,0 +1,31 @@
+.clients {
+  display: flex;
+  gap: 30px;
+
+  &__item {
+    width: 170px;
+    height: 92px;
+    background-color: var(--background);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--fill-icon);
+    border-radius: 4px;
+  }
+  &__item:hover,
+  &__item:focus {
+    cursor: pointer;
+    border: 1px solid var(color-accent-blue);
+    transition-duration: var(--default-time);
+    transition-timing-function: var(--default-timing-function);
+  }
+  &__logo {
+    fill: var(--fill-icon);
+  }
+  &__item:hover &__logo,
+  &__item:focus &__logo {
+    fill: var(--color-accent-blue);
+    transition-duration: var(--default-time);
+    transition-timing-function: var(--default-timing-function);
+  }
+}

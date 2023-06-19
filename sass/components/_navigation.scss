@@ -1,0 +1,36 @@
+.navigation {
+  display: flex;
+  padding-left: 0;
+  gap: 46px;
+
+  &__link {
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    color: var(--color-text);
+    gap: 46px;
+    padding-left: 0;
+  }
+  &__link--active {
+    position: relative;
+    display: flex;
+    color: var(--color-accent-blue);
+  }
+  &__link--active::after {
+    content: "";
+    position: absolute;
+    background: var(--color-accent-blue);
+    width: 100%;
+    height: 4px;
+    top: 44px;
+    border-radius: 2px;
+  }
+  &__link:hover,
+  &__link:focus {
+    color: var(--color-accent-blue);
+    transition-duration: var(--default-time);
+    transition-timing-function: var(--default-timing-function);
+  }
+}

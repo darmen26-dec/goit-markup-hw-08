@@ -1,0 +1,22 @@
+html {
+  font-size: 10px;
+}
+body {
+  font-family: Roboto, sans-serif;
+  background: var(--background);
+  color: var(--color-text);
+  width: 1600px;
+  padding: 0;
+  margin: 0 auto;
+}
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+.reset-margin {
+  margin: 0 auto;
+}
+ul {
+  list-style: none;
+  margin: 0 auto;
+}

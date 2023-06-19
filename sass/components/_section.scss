@@ -1,0 +1,12 @@
+.section {
+  padding-block: 94px;
+
+  &__title {
+    font-weight: 700;
+    font-size: 3.6rem;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    text-align: center;
+    margin-block: 0 50px;
+  }
+}

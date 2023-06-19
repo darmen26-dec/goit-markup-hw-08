@@ -1,0 +1,32 @@
+.portfolio-buttons {
+  display: flex;
+  justify-content: center;
+  padding-left: 0px;
+
+  &__list {
+    margin-right: 8px;
+    padding: 0 0 50px 0;
+  }
+  &__list:last-child {
+    margin-right: 0;
+  }
+  &__item {
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 1.6;
+    letter-spacing: 0.03em;
+    border-radius: 4px;
+    border: 0;
+    padding: 6px 22px;
+  }
+  &__item:hover,
+  &__item:focus {
+    color: var(--color-text-secondary);
+    background-color: var(--color-accent-blue);
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
+      0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
+    transition-duration: var(--default-time);
+    transition-timing-function: var(--default-timing-function);
+  }
+}
