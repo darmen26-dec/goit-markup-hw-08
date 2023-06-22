@@ -1,5 +1,6 @@
 .clients {
-  display: flex;
+  display: none;
+  /*   display: flex; */
   gap: 30px;
 
   &__item {

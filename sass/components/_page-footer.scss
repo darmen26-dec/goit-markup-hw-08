@@ -1,10 +1,12 @@
 .page-footer {
+  display: none;
   background-color: var(--background-footer);
   padding: 60px 0;
 }
 
 .page-footer-address {
-  display: flex;
+  display: none;
+  /*  display: flex; */
 
   &__text {
     font-style: normal;
@@ -19,6 +21,7 @@
   }
 
   &__contact {
+    display: none;
     font-style: normal;
     font-size: 1.4rem;
     line-height: 1.7;
@@ -38,6 +41,7 @@
 }
 
 .page-footer-socialmedia {
+  display: none;
   padding-block: 0;
 
   &__text {
@@ -53,7 +57,8 @@
 }
 
 .page-footer-socialmedia-items {
-  display: flex;
+  display: none;
+  /*  display: flex; */
   gap: 10px;
 
   &__link {
@@ -78,6 +83,7 @@
 }
 
 .page-footer-newsletter {
+  display: none;
   margin-top: 12px;
   margin-right: 0;
 
