@@ -1,3 +1,35 @@
+.menu-toggle {
+  background-color: transparent;
+  border: none;
+  min-height: 40px;
+  min-width: 40px;
+  top: 10px;
+  right: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @include tablet {
+    display: none;
+  }
+  @include desktop {
+    display: none;
+  }
+
+  &__button {
+    transition-duration: var(--default-time);
+    transition-timing-function: var(--default-timing-function);
+    &:hover,
+    &:focus {
+      fill: var(--color-accent-blue);
+    }
+  }
+}
+
+.menu-container.is-open {
+  transform: translateX(0);
+}
+
 .menu-container {
   position: fixed;
   background-color: var(--background);
@@ -6,18 +38,14 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  transform: translateX(100%);
+  transition: transform var(--default-time) ease-in-out;
 
-  &__button {
-    position: absolute;
-    background-color: transparent;
-    border: none;
-    top: 10px;
-    right: 15px;
+  @include tablet {
+    display: none;
   }
-
-  &__icon {
-    transition-duration: var(--default-time);
-    transition-timing-function: var(--default-timing-function);
+  @include desktop {
+    display: none;
   }
 
   &__mobile-menu {
@@ -37,6 +65,11 @@
     font-weight: 500;
     letter-spacing: 0.8px;
     padding-bottom: 32px;
+    transition: color var(--default-time) var(--default-timing-function);
+    &:hover,
+    &:focus {
+      color: var(--color-accent-blue);
+    }
   }
 
   &__mobile-contact {
@@ -87,5 +120,15 @@
     font-size: 1.8rem;
     line-height: 1.2;
     letter-spacing: 0.36px;
+
+    @media (max-width: 420px) {
+      font-size: 1.3rem;
+    }
   }
+}
+
+.menu-container .menu-toggle {
+  position: absolute;
+  top: 10px;
+  right: 15px;
 }
