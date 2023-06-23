@@ -24,39 +24,54 @@
     <!--HEADER-->
     <header class="page-header reset-margin">
       <div class="container">
-        <div class="page-header__menu">
-          <div class="page-header__navigation">
-            <a href="./index.html" class="logo logo--header"
-              ><span class="logo--highlight">Web</span>Studio</a
-            >
-            <nav>
-              <ul class="navigation">
-                <li>
-                  <a href="./index.html" class="navigation__link">Agencja</a>
-                </li>
-                <li>
-                  <a
-                    href="./portfolio.html"
-                    class="navigation__link navigation__link--active"
-                    >Portfolio</a
-                  >
-                </li>
-                <li><a href="#" class="navigation__link">Kontakt</a></li>
-              </ul>
-            </nav>
-          </div>
-          <div class="contact">
-            <a href="mailto:info@devstudio.com" class="contact__mail-phone"
-              ><svg class="contact__icon" width="16" height="12">
+        <div class="page-header__wrapper">
+          <a href="./index.html" class="logo logo--header"
+            ><span class="logo--highlight">Web</span>Studio</a
+          >
+          <nav class="page-header__navigation">
+            <ul class="page-header__navigation-list">
+              <li>
+                <a
+                  href="./index.html"
+                  class="page-header__navigation-link page-header__navigation-link--active"
+                  >Agencja</a
+                >
+              </li>
+              <li>
+                <a href="./portfolio.html" class="page-header__navigation-link"
+                  >Portfolio</a
+                >
+              </li>
+              <li>
+                <a href="#" class="page-header__navigation-link">Kontakt</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="page-header__contact">
+            <a
+              href="mailto:info@devstudio.com"
+              class="page-header__contact-item"
+              ><svg class="page-header__contact-icon" width="16" height="12">
                 <use href="./images/icons.svg#icon-envelope"></use></svg
               >info@devstudio.com</a
             >
-            <a href="tel:+48111111111" class="contact__mail-phone"
-              ><svg class="contact__icon" width="10" height="16">
+            <a href="tel:+48111111111" class="page-header__contact-item"
+              ><svg class="page-header__contact-icon" width="10" height="16">
                 <use href="./images/icons.svg#icon-smartphone"></use></svg
               >+48 111 111 111</a
             >
           </div>
+          <!--BUTTON MENU MOBILE -->
+          <button
+            type="button"
+            class="menu-toggle page-header__button js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg class="menu-toggle__button" width="40px" height="40px">
+              <use href="./images/icons.svg#icon-menu_40px"></use>
+            </svg>
+          </button>
         </div>
       </div>
     </header>
@@ -421,13 +436,94 @@
         </form>
       </div>
     </footer>
+    <!-- MENU MOBILE-->
+
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button type="button" class="menu-toggle js-close-menu">
+        <svg class="menu-toggle__button" width="40px" height="40px">
+          <use href="./images/icons.svg#icon-close_40px"></use>
+        </svg>
+      </button>
+      <ul class="menu-container__mobile-menu">
+        <li class="menu-container__mobile-menu-item">
+          <a href="./index.html" class="menu-container__mobile-menu-link"
+            >Agencja</a
+          >
+        </li>
+        <li class="menu-container__mobile-menu-item">
+          <a href="./portfolio.html" class="menu-container__mobile-menu-link"
+            >Portfolio</a
+          >
+        </li>
+        <li class="menu-container__mobile-menu-item">
+          <a href="#" class="menu-container__mobile-menu-link">Kontakt</a>
+        </li>
+      </ul>
+      <div>
+        <ul class="menu-container__mobile-contact">
+          <li class="menu-container__mobile-contact-item">
+            <a
+              href="tel:+48111111111"
+              class="menu-container__mobile-contact-phone"
+              >+48 111 111 111</a
+            >
+          </li>
+          <li class="menu-container__mobile-contact-item">
+            <a
+              href="mailto:info@devstudio.com"
+              class="menu-container__mobile-contact-mail"
+              >info@devstudio.com</a
+            >
+          </li>
+        </ul>
+        <ul class="menu-container__mobile-socialmedia">
+          <li class="menu-container__mobile-socialmedia-item">
+            <a
+              href="https://www.instagram.com/"
+              class="menu-container__mobile-socialmedia-link"
+              target="_blank"
+              rel="noreferrer noopener"
+              >Instagram</a
+            >
+          </li>
+          <li class="menu-container__mobile-socialmedia-item">
+            <a
+              href="https://twitter.com/"
+              class="menu-container__mobile-socialmedia-link"
+              target="_blank"
+              rel="noreferrer noopener"
+              >Twitter</a
+            >
+          </li>
+          <li class="menu-container__mobile-socialmedia-item">
+            <a
+              href="https://www.facebook.com/"
+              class="menu-container__mobile-socialmedia-link"
+              target="_blank"
+              rel="noreferrer noopener"
+              >Facebook</a
+            >
+          </li>
+          <li class="menu-container__mobile-socialmedia-item">
+            <a
+              href="https://www.linkedin.com/"
+              class="menu-container__mobile-socialmedia-link"
+              target="_blank"
+              rel="noreferrer noopener"
+              >LinkedIn</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+
     <script
       defer
       src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
       integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
       crossorigin="anonymous"
     ></script>
-    <script defer src=".js/mobile-menu.js"></script>
+    <script defer src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>
