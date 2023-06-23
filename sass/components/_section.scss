@@ -1,5 +1,9 @@
 .section {
-  padding-block: 94px;
+  padding-block: 60px;
+
+  @include desktop {
+    padding-block: 94px;
+  }
 
   &__title {
     font-weight: 700;
@@ -8,5 +12,12 @@
     letter-spacing: 0.03em;
     text-align: center;
     margin-block: 0 50px;
+  }
+  &__title--specialty {
+    display: none;
+
+    @include desktop {
+      display: inherit;
+    }
   }
 }
