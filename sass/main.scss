@@ -1,9 +1,9 @@
-@use "./utils/vars" as *;
+@import "./utils/vars";
 @import "./utils/mixins";
 @import "./utils/global";
-
 @import "./components/page-header";
 @import "./components/logo";
+@import "./components/menu-mobile";
 @import "./components/hero";
 @import "./components/modal-window-backdrop";
 @import "./components/modal-window-form";

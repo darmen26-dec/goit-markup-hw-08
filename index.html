@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+li<!DOCTYPE html>
 <html lang="pl">
   <head>
     <meta charset="UTF-8" />
@@ -64,11 +64,11 @@
           <!--BUTTON MENU MOBILE -->
           <button
             type="button"
-            class="menu-toggle js-open-menu"
+            class="page-header__button js-open-menu"
             aria-expanded="false"
             aria-controls="mobile-menu"
           >
-            <svg class="menu-toggle__button" width="40px" height="40px">
+            <svg class="page-header__icon" width="40px" height="40px">
               <use href="./images/icons.svg#icon-menu_40px"></use>
             </svg>
           </button>
@@ -638,68 +638,82 @@
     <!-- MENU MOBILE-->
 
     <div class="menu-container js-menu-container" id="mobile-menu">
-      <button type="button" class="menu-toggle js-close-menu">
-        <svg class="menu-toggle__button" width="40px" height="40px">
+      <button type="button" class="menu-container__button js-close-menu">
+        <svg class="menu-container__icon" width="40px" height="40px">
           <use href="./images/icons.svg#icon-close_40px"></use>
         </svg>
       </button>
-      <ul class="mobile-menu">
-        <li><a href="./index.html" class="mobile-menu__link">Agencja</a></li>
-        <li>
-          <a href="./portfolio.html" class="mobile-menu__link">Portfolio</a>
-        </li>
-        <li><a href="#" class="mobile-menu__link">Kontakt</a></li>
-      </ul>
-      <ul class="mobile-contact">
-        <li class="mobile-contact__item">
-          <a href="tel:+48111111111" class="mobile-contact__phone"
-            >+48 111 111 111</a
+      <ul class="menu-container__mobile-menu">
+        <li class="menu-container__mobile-menu-item">
+          <a href="./index.html" class="menu-container__mobile-menu-link"
+            >Agencja</a
           >
         </li>
-        <li class="mobile-contact__item">
-          <a href="mailto:info@devstudio.com" class="mobile-contact__mail"
-            >info@devstudio.com</a
+        <li class="menu-container__mobile-menu-item">
+          <a href="./portfolio.html" class="menu-container__mobile-menu-link"
+            >Portfolio</a
           >
+        </li>
+        <li class="menu-container__mobile-menu-item">
+          <a href="#" class="menu-container__mobile-menu-link">Kontakt</a>
         </li>
       </ul>
-      <ul class="mobile-socialmedia">
-        <li class="mobile-socialmedia__item">
-          <a
-            href="https://www.instagram.com/"
-            class="mobile-socialmedia__link"
-            target="_blank"
-            rel="noreferrer noopener"
-            >Instagram</a
-          >
-        </li>
-        <li class="mobile-socialmedia__item">
-          <a
-            href="https://twitter.com/"
-            class="mobile-socialmedia__link"
-            target="_blank"
-            rel="noreferrer noopener"
-            >Twitter</a
-          >
-        </li>
-        <li class="mobile-socialmedia__item">
-          <a
-            href="https://www.facebook.com/"
-            class="mobile-socialmedia__link"
-            target="_blank"
-            rel="noreferrer noopener"
-            >Facebook</a
-          >
-        </li>
-        <li class="mobile-socialmedia__item">
-          <a
-            href="https://www.linkedin.com/"
-            class="mobile-socialmedia__link"
-            target="_blank"
-            rel="noreferrer noopener"
-            >LinkedIn</a
-          >
-        </li>
-      </ul>
+      <div>
+        <ul class="menu-container__mobile-contact">
+          <li class="menu-container__mobile-contact-item">
+            <a
+              href="tel:+48111111111"
+              class="menu-container__mobile-contact-phone"
+              >+48 111 111 111</a
+            >
+          </li>
+          <li class="menu-container__mobile-contact-item">
+            <a
+              href="mailto:info@devstudio.com"
+              class="menu-container__mobile-contact-mail"
+              >info@devstudio.com</a
+            >
+          </li>
+        </ul>
+        <ul class="menu-container__mobile-socialmedia">
+          <li class="menu-container__mobile-socialmedia-item">
+            <a
+              href="https://www.instagram.com/"
+              class="menu-container__mobile-socialmedia-link"
+              target="_blank"
+              rel="noreferrer noopener"
+              >Instagram</a
+            >
+          </li>
+          <li class="menu-container__mobile-socialmedia-item">
+            <a
+              href="https://twitter.com/"
+              class="menu-container__mobile-socialmedia-link"
+              target="_blank"
+              rel="noreferrer noopener"
+              >Twitter</a
+            >
+          </li>
+          <li class="menu-container__mobile-socialmedia-item">
+            <a
+              href="https://www.facebook.com/"
+              class="menu-container__mobile-socialmedia-link"
+              target="_blank"
+              rel="noreferrer noopener"
+              >Facebook</a
+            >
+          </li>
+          <li class="menu-container__mobile-socialmedia-item">
+            <a
+              href="https://www.linkedin.com/"
+              class="menu-container__mobile-socialmedia-link"
+              target="_blank"
+              rel="noreferrer noopener"
+              >LinkedIn</a
+            >
+          </li>
+        </ul>
+      </div>
     </div>
 
     <div class="backdrop is-hidden" data-modal>

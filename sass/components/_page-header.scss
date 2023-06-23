@@ -98,4 +98,16 @@
     fill: currentColor;
     margin-right: 10px;
   }
+  &__button {
+    background-color: transparent;
+    border: none;
+
+    @include tablet {
+      display: none;
+    }
+  }
+  &__icon {
+    transition-duration: var(--default-time);
+    transition-timing-function: var(--default-timing-function);
+  }
 }

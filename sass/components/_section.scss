@@ -1,4 +1,5 @@
 .section {
+  display: none;
   padding-block: 60px;
 
   @include desktop {
