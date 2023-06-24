@@ -1,27 +1,84 @@
 .hero {
-  display: none;
-  height: 600px;
   background-color: var(--background-footer);
-  padding: 200px 452px 280px 452px;
-  text-align: center;
-  text-transform: uppercase;
+  padding-block: 118px 128px;
+  margin: 0 auto;
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../../images/hero/hero-background-image@1x.jpg);
+    url(../images/hero/hero-mobile@1x.jpg);
   background-size: cover;
-  border: 1px solid var(--color-text-logo);
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/hero/hero-mobile@2x.jpg);
+  }
+
+  @include tablet {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/hero/hero-tablet@1x.jpg);
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/hero/hero-tablet@2x.jpg);
+    }
+  }
+
+  @include desktop {
+    padding-block: 200px 210px;
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/hero/hero-background-image@1x.jpg);
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/hero/hero-background-image@2x.jpg);
+    }
+  }
 
   &__title {
-    font-weight: 900;
-    font-size: 4.4rem;
-    line-height: 1.4;
-    letter-spacing: 0.06em;
     color: var(--color-text-secondary);
-    width: 696px;
-    top: 280px;
-    margin: 0 auto;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 2.6rem;
+    line-height: 1.6;
+    letter-spacing: 1.56px;
+    max-width: 365px;
+    margin: 0 auto 30px;
+
+    @include desktop {
+      font-size: 4.4rem;
+      line-height: 1.4;
+      letter-spacing: 0.06em;
+      top: 280px;
+      max-width: 696px;
+    }
   }
 
   &__button {
@@ -29,12 +86,15 @@
     font-weight: 700;
     font-size: 1.6rem;
     line-height: 1.9;
+    display: flex;
+    justify-content: center;
     text-align: center;
-    letter-spacing: 0.06em;
+    margin: 0 auto;
+    padding: 10px 41px 10px 42px;
+    border: none;
     color: var(--color-text-secondary);
     background-color: var(--color-accent-blue);
     width: 200px;
-    margin-top: 30px;
     border-radius: 4px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   }

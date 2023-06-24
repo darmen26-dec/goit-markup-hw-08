@@ -1,6 +1,9 @@
 .section {
   padding-block: 60px;
 
+  @include tablet {
+    padding-bottom: 45px;
+  }
   @include desktop {
     padding-block: 94px;
   }

@@ -7,9 +7,20 @@
   padding-left: 0;
   width: 100%; /* zmiana - dodane */
   gap: 30px;
+  @include desktop {
+    padding-bottom: 94px;
+  }
 
   &__item {
     width: 100%;
+    @include tablet {
+      width: calc(100% / 2 - 15px);
+      /* dzielimy na 2 elementy i odejmujemy 30px/2 (łączny gap/liczbę elementów) */
+    }
+    @include desktop {
+      width: calc(100% / 4 - 23px);
+      /* dzielimy na 4 elementy i odejmujemy 90px/4 i zaokrąglamy */
+    }
   }
 
   &__icon {
@@ -20,46 +31,26 @@
     display: flex;
     justify-content: center;
     padding: 25px 0;
-    margin-bottom: 30px;
   }
+
   &__heading {
     font-weight: 700;
     font-size: 1.4rem;
     line-height: 1.1;
     letter-spacing: 0.03em;
     text-align: center;
+    margin-block: 30px 10px;
+    @include tablet {
+      text-align: left;
+    }
   }
+
   &__text {
     font-size: 1.4rem;
     line-height: 1.7;
     letter-spacing: 0.03em;
     color: var(--color-text-info);
-    margin-top: 10px;
-  }
-}
-
-@include tablet {
-  .description {
-    &__item {
-      width: calc(100% / 2 - 15px);
-      /* dzielimy na 2 elementy i odejmujemy 30px/2 (łączny gap/liczbę elementów) */
-    }
-    &__heading {
-      text-align: left;
-    }
-  }
-}
-
-@include desktop {
-  .description {
-    padding-bottom: 94px;
-
-    &__item {
-      width: calc(100% / 4 - 23px);
-      /* dzielimy na 4 elementy i odejmujemy 90px/4 i zaokrąglamy */
-    }
-    &__heading {
-      text-align: left;
-    }
+    margin-top: 0;
+    margin-bottom: 0;
   }
 }
