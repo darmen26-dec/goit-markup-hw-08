@@ -14,12 +14,10 @@
   &__item {
     width: 100%;
     @include tablet {
-      width: calc(100% / 2 - 15px);
-      /* dzielimy na 2 elementy i odejmujemy 30px/2 (łączny gap/liczbę elementów) */
+      flex-basis: calc((100% - 1 * 30px) / 2);
     }
     @include desktop {
-      width: calc(100% / 4 - 23px);
-      /* dzielimy na 4 elementy i odejmujemy 90px/4 i zaokrąglamy */
+      flex-basis: calc((100% - 3 * 30px) / 4);
     }
   }
 
