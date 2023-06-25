@@ -1,17 +1,28 @@
 .clients {
-  display: none;
-  /*   display: flex; */
+  display: flex;
   gap: 30px;
+  flex-wrap: wrap;
 
   &__item {
-    width: 170px;
+    width: 210px;
     height: 92px;
     background-color: var(--background);
+    border: 1px solid var(--fill-icon);
+    border-radius: 4px;
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid var(--fill-icon);
-    border-radius: 4px;
+    padding: 16px 52px;
+    @include tablet {
+      width: 226px;
+      height: 92px;
+      padding: 16px 60px;
+    }
+    @include desktop {
+      width: 170px;
+      height: 92px;
+      padding: 16px 32px;
+    }
   }
   &__item:hover,
   &__item:focus {
