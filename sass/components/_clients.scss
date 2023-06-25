@@ -1,7 +1,8 @@
 .clients {
   display: flex;
-  gap: 30px;
+  justify-content: center;
   flex-wrap: wrap;
+  gap: 30px;
 
   &__item {
     width: 210px;

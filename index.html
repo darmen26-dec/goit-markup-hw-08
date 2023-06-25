@@ -64,7 +64,7 @@
           <!--BUTTON MENU MOBILE -->
           <button
             type="button"
-            class="menu-toggle page-header__button js-open-menu"
+            class="menu-toggle js-open-menu"
             aria-expanded="false"
             aria-controls="mobile-menu"
           >
@@ -202,34 +202,36 @@
         <div class="container">
           <ul class="team__list">
             <li class="team__item">
-              <picture>
+              <picture class="team__picture">
                 <source
-                  media="(min-width: 900px)"
+                  media="(min-width: 1200px)"
                   srcset="
                     ./images/team/team-img1-desktop@1x.jpg 1x,
                     ./images/team/team-img1-desktop@2x.jpg 2x
                   "
+                  sizes="270px"
                 />
                 <source
-                  media="(min-width: 481px)"
+                  media="(min-width: 768px)"
                   srcset="
                     ./images/team/team-img1-tablet@1x.jpg 1x,
                     ./images/team/team-img1-tablet@2x.jpg 2x
                   "
+                  sizes="354px"
                 />
                 <source
-                  media="(max-width: 480px)"
+                  media="(min-width: 320px)"
                   srcset="
                     ./images/team/team-img1-mobile@1x.jpg 1x,
                     ./images/team/team-img1-mobile@2x.jpg 2x
                   "
+                  sizes="450px"
                 />
                 <img
-                  src="./images/team/team-img1-mobile@1x.jpg"
+                  src="./images/team/team-img1-desktop@1x.jpg"
                   type="jpg"
                   alt="smiling man with glasses"
-                  width="450px"
-                  height="460px"
+                  class="team__img"
                 />
               </picture>
               <h3 class="team__name">John Doe</h3>
@@ -278,34 +280,33 @@
               </div>
             </li>
             <li class="team__item">
-              <picture>
+              <picture class="team__picture">
                 <source
-                  media="(min-width: 900px)"
+                  media="(min-width: 1200px)"
                   srcset="
                     ./images/team/team-img2-desktop@1x.jpg 1x,
                     ./images/team/team-img2-desktop@2x.jpg 2x
                   "
                 />
                 <source
-                  media="(min-width: 481px)"
+                  media="(min-width: 768px)"
                   srcset="
                     ./images/team/team-img2-tablet@1x.jpg 1x,
                     ./images/team/team-img2-tablet@2x.jpg 2x
                   "
                 />
                 <source
-                  media="(max-width: 480px)"
+                  media="(min-width: 320px)"
                   srcset="
                     ./images/team/team-img2-mobile@1x.jpg 1x,
                     ./images/team/team-img2-mobile@2x.jpg 2x
                   "
                 />
                 <img
-                  src="./images/team/team-img2-mobile@1x.jpg"
+                  src="./images/team/team-img2-desktop@1x.jpg"
                   type="jpg"
                   alt="smiling woman with glasses"
-                  width="450px"
-                  height="460px"
+                  class="team__img"
                 />
               </picture>
               <h3 class="team__name">John Doe</h3>
@@ -354,34 +355,33 @@
               </div>
             </li>
             <li class="team__item">
-              <picture>
+              <picture class="team__picture">
                 <source
-                  media="(min-width: 900px)"
+                  media="(min-width: 1200px)"
                   srcset="
                     ./images/team/team-img3-desktop@1x.jpg 1x,
                     ./images/team/team-img3-desktop@2x.jpg 2x
                   "
                 />
                 <source
-                  media="(min-width: 481px)"
+                  media="(min-width: 768px)"
                   srcset="
                     ./images/team/team-img3-tablet@1x.jpg 1x,
                     ./images/team/team-img3-tablet@2x.jpg 2x
                   "
                 />
                 <source
-                  media="(max-width: 480px)"
+                  media="(min-width: 320px)"
                   srcset="
                     ./images/team/team-img3-mobile@1x.jpg 1x,
                     ./images/team/team-img3-mobile@2x.jpg 2x
                   "
                 />
                 <img
-                  src="./images/team/team-img3-mobile@1x.jpg"
+                  src="./images/team/team-img3-desktop@1x.jpg"
                   type="jpg"
                   alt="smiling brunette"
-                  width="450px"
-                  height="460px"
+                  class="team__img"
                 />
               </picture>
               <h3 class="team__name">John Doe</h3>
@@ -432,32 +432,31 @@
             <li class="team__item">
               <picture class="team__picture">
                 <source
-                  media="(min-width: 900px)"
+                  media="(min-width: 1200px)"
                   srcset="
                     ./images/team/team-img4-desktop@1x.jpg 1x,
                     ./images/team/team-img4-desktop@2x.jpg 2x
                   "
                 />
                 <source
-                  media="(min-width: 481px)"
+                  media="(min-width: 768px)"
                   srcset="
                     ./images/team/team-img4-tablet@1x.jpg 1x,
                     ./images/team/team-img4-tablet@2x.jpg 2x
                   "
                 />
                 <source
-                  media="(max-width: 480px)"
+                  media="(min-width: 320px)"
                   srcset="
                     ./images/team/team-img4-mobile@1x.jpg 1x,
                     ./images/team/team-img4-mobile@2x.jpg 2x
                   "
                 />
                 <img
-                  src="./images/team/team-img4-mobile@1x.jpg"
+                  src="./images/team/team-img4-desktop@1x.jpg"
                   type="jpg"
                   alt="brunette with glasses"
-                  width="450px"
-                  height="460px"
+                  class="team__img"
                 />
               </picture>
               <h3 class="team__name">John Doe</h3>
