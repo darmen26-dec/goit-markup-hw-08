@@ -11,12 +11,19 @@
   text-align: center;
   gap: 8px;
 
-  @include tablet {
-  }
   @include desktop {
+    padding-inline: 0;
     align-items: normal;
     justify-content: left;
     text-align: left;
+  }
+
+  &__wrapper {
+    margin-bottom: 60px;
+
+    @include desktop {
+      margin-block: 0;
+    }
   }
 
   &__text {
@@ -61,6 +68,18 @@
 
 .page-footer-socialmedia {
   padding-block: 52px 60px;
+
+  @include tablet {
+    margin-top: 0;
+    padding-top: 0;
+    padding-left: 144px;
+    padding-bottom: 116px;
+  }
+  @include desktop {
+    padding-top: 12px;
+    padding-bottom: 40px;
+    padding-left: 0;
+  }
 
   &__text {
     font-weight: 700;
@@ -113,8 +132,15 @@
   justify-content: center;
   align-items: center;
   text-align: center;
+  @include tablet {
+    display: flex;
+    flex-direction: column;
+  }
   @include desktop {
+    display: flex;
+
     margin-top: 12px;
+    /* align-items: baseline; dorzucić potem do socialmediów może wtedy będzie bez marginów */
   }
 
   &__text {
@@ -133,7 +159,7 @@
   }
 
   &__input {
-    width: 358px;
+    width: 450px;
     height: 50px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -143,9 +169,13 @@
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
     background-color: transparent;
+    margin-block: 20px;
     padding-left: 16px;
-    margin-inline: 78px 12px;
-    margin-top: 20px;
+    @include desktop {
+      width: 358px;
+      height: 50px;
+      margin-inline: 78px 12px;
+    }
   }
 
   &__button {
