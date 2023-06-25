@@ -5,8 +5,7 @@
   gap: 30px;
 
   &__item {
-    width: 210px;
-    height: 92px;
+    max-width: 210px;
     background-color: var(--background);
     border: 1px solid var(--fill-icon);
     border-radius: 4px;
@@ -15,13 +14,11 @@
     align-items: center;
     padding: 16px 52px;
     @include tablet {
-      width: 226px;
-      height: 92px;
+      max-width: 226px;
       padding: 16px 60px;
     }
     @include desktop {
-      width: 170px;
-      height: 92px;
+      max-width: 170px;
       padding: 16px 32px;
     }
   }
