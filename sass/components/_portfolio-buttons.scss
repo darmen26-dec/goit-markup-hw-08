@@ -1,15 +1,35 @@
 .portfolio-buttons {
-  display: none;
-  /*  display: flex; */
-  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
   padding-left: 0px;
+
+  @include tablet {
+    justify-content: center;
+  }
 
   &__list {
     margin-right: 8px;
-    padding: 0 0 50px 0;
+    padding: 0 0 15px 0;
+
+    @include tablet {
+      margin-right: 6px;
+      padding: 0 0 30px 0;
+    }
+    @include desktop {
+      margin-right: 8px;
+      padding: 0 0 50px 0;
+    }
   }
   &__list:last-child {
     margin-right: 0;
+    padding-bottom: 40px;
+
+    @include tablet {
+      padding-bottom: 30px;
+    }
+    @include desktop {
+      padding-bottom: 50px;
+    }
   }
   &__item {
     cursor: pointer;
@@ -19,8 +39,14 @@
     letter-spacing: 0.03em;
     border-radius: 4px;
     border: 0;
-    padding: 6px 22px;
+    padding: 6px 26px;
+    background: var(--background-secondary);
+
+    @include desktop {
+      padding: 6px 22px;
+    }
   }
+
   &__item:hover,
   &__item:focus {
     color: var(--color-text-secondary);
