@@ -4,10 +4,14 @@
   justify-content: space-evenly;
   gap: 30px;
   padding: 0;
+  width: 100%;
 
   &__list {
-    flex-basis: calc((100% - 90px) / 3); /* ustawia szerokość elementów */
-    background-color: var(--background);
+    @include tablet {
+    }
+    @include desktop {
+      flex-basis: calc((100% - 60px) / 3); /* ustawia szerokość elementów */
+    }
   }
 
   &__list:hover,
@@ -21,7 +25,14 @@
 .portfolio-card {
   display: grid;
   margin: 0;
-  width: 370px;
+  width: 100%;
+
+  @include tablet {
+    max-width: 354px;
+  }
+  @include desktop {
+    max-width: 370px;
+  }
 
   &__figcaption {
     border-left: 1px solid var(--border-color);
@@ -29,6 +40,14 @@
     border-bottom: 1px solid var(--border-color);
     padding: 20px 24px;
     width: 370px;
+    width: 100%;
+
+    @include tablet {
+      max-width: 354px;
+    }
+    @include desktop {
+      max-width: 370px;
+    }
   }
 
   &__project-name {
@@ -53,6 +72,17 @@
 .overlay {
   position: relative;
   overflow: hidden;
+
+  &__picture {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
 
   &__box {
     position: absolute;

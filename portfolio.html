@@ -64,7 +64,7 @@
           <!--BUTTON MENU MOBILE -->
           <button
             type="button"
-            class="menu-toggle page-header__button js-open-menu"
+            class="menu-toggle js-open-menu"
             aria-expanded="false"
             aria-controls="mobile-menu"
           >
@@ -107,17 +107,43 @@
           </ul>
         </div>
         <div>
-          <section class="container">
+          <section>
             <ul class="portfolio-projects">
               <li class="portfolio-projects__list">
                 <figure class="portfolio-card">
                   <div class="overlay">
-                    <img
-                      src="./images/portfolio/portfolio-img1.jpg"
-                      alt="website"
-                      width="370px"
-                      height="294px"
-                    />
+                    <picture class="overlay__picture">
+                      <source
+                        media="(min-width: 1200px)"
+                        srcset="
+                          ./images/portfolio/portfolio-img1-desktop@1x.jpg 1x,
+                          ./images/portfolio/portfolio-img1-desktop@2x.jpg 2x
+                        "
+                        sizes="(min-width: 1200px) 370px"
+                      />
+                      <source
+                        media="(min-width: 768px)"
+                        srcset="
+                          ./images/portfolio/portfolio-img1-tablet@1x.jpg 1x,
+                          ./images/portfolio/portfolio-img1-tablet@2x.jpg 2x
+                        "
+                        sizes="(min-width: 768px) 354px"
+                      />
+                      <source
+                        media="(min-width: 320px)"
+                        srcset="
+                          ./images/portfolio/portfolio-img1-mobile@1x.jpg 1x,
+                          ./images/portfolio/portfolio-img1-mobile@2x.jpg 2x
+                        "
+                        sizes="(min-width: 320px) 450px"
+                      />
+                      <img
+                        src="./images/portfolio/portfolio-img1-desktop@1x.jpg"
+                        type="jpg"
+                        alt="website"
+                        class="overlay__img"
+                      />
+                    </picture>
                     <div class="overlay__box">
                       <p class="overlay__text">
                         Technocrack jest popularną platformą wykorzystywaną do
@@ -138,12 +164,38 @@
               <li class="portfolio-projects__list">
                 <figure class="portfolio-card">
                   <div class="overlay">
-                    <img
-                      src="./images/portfolio/portfolio-img2.jpg"
-                      alt="two man playing basketball"
-                      width="370px"
-                      height="294px"
-                    />
+                    <picture class="overlay__picture">
+                      <source
+                        media="(min-width: 1200px)"
+                        srcset="
+                          ./images/portfolio/portfolio-img2-desktop@1x.jpg 1x,
+                          ./images/portfolio/portfolio-img2-desktop@2x.jpg 2x
+                        "
+                        sizes="(min-width: 1200px) 370px"
+                      />
+                      <source
+                        media="(min-width: 768px)"
+                        srcset="
+                          ./images/portfolio/portfolio-img2-tablet@1x.jpg 1x,
+                          ./images/portfolio/portfolio-img2-tablet@2x.jpg 2x
+                        "
+                        sizes="(min-width: 768px) 354px"
+                      />
+                      <source
+                        media="(min-width: 320px)"
+                        srcset="
+                          ./images/portfolio/portfolio-img2-mobile@1x.jpg 1x,
+                          ./images/portfolio/portfolio-img2-mobile@2x.jpg 2x
+                        "
+                        sizes="(min-width: 320px) 450px"
+                      />
+                      <img
+                        src="./images/portfolio/portfolio-img2-desktop@1x.jpg"
+                        type="jpg"
+                        alt="two man playing basketball"
+                        class="overlay__img"
+                      />
+                    </picture>
                     <div class="overlay__box">
                       <p class="overlay__text">
                         Technocrack jest popularną platformą wykorzystywaną do
@@ -164,12 +216,38 @@
               <li class="portfolio-projects__list">
                 <figure class="portfolio-card">
                   <div class="overlay">
-                    <img
-                      src="./images/portfolio/portfolio-img3.jpg"
-                      alt="logo of the seafood restaurant"
-                      width="370px"
-                      height="294px"
-                    />
+                    <picture class="overlay__picture">
+                      <source
+                        media="(min-width: 1200px)"
+                        srcset="
+                          ./images/portfolio/portfolio-img3-desktop@1x.jpg 1x,
+                          ./images/portfolio/portfolio-img3-desktop@2x.jpg 2x
+                        "
+                        sizes="(min-width: 1200px) 370px"
+                      />
+                      <source
+                        media="(min-width: 768px)"
+                        srcset="
+                          ./images/portfolio/portfolio-img3-tablet@1x.jpg 1x,
+                          ./images/portfolio/portfolio-img3-tablet@2x.jpg 2x
+                        "
+                        sizes="(min-width: 768px) 354px"
+                      />
+                      <source
+                        media="(min-width: 320px)"
+                        srcset="
+                          ./images/portfolio/portfolio-img3-mobile@1x.jpg 1x,
+                          ./images/portfolio/portfolio-img3-mobile@2x.jpg 2x
+                        "
+                        sizes="(min-width: 320px) 450px"
+                      />
+                      <img
+                        src="./images/portfolio/portfolio-img3-desktop@1x.jpg"
+                        type="jpg"
+                        alt="logo of the seafood restaurant"
+                        class="overlay__img"
+                      />
+                    </picture>
                     <div class="overlay__box">
                       <p class="overlay__text">
                         Technocrack jest popularną platformą wykorzystywaną do
@@ -190,12 +268,38 @@
               <li class="portfolio-projects__list">
                 <figure class="portfolio-card">
                   <div class="overlay">
-                    <img
-                      src="./images/portfolio/portfolio-img4.jpg"
-                      alt="headphones"
-                      width="370px"
-                      height="294px"
-                    />
+                    <picture class="overlay__picture">
+                      <source
+                        media="(min-width: 1200px)"
+                        srcset="
+                          ./images/portfolio/portfolio-img4-desktop@1x.jpg 1x,
+                          ./images/portfolio/portfolio-img4-desktop@2x.jpg 2x
+                        "
+                        sizes="(min-width: 1200px) 370px"
+                      />
+                      <source
+                        media="(min-width: 768px)"
+                        srcset="
+                          ./images/portfolio/portfolio-img4-tablet@1x.jpg 1x,
+                          ./images/portfolio/portfolio-img4-tablet@2x.jpg 2x
+                        "
+                        sizes="(min-width: 768px) 354px"
+                      />
+                      <source
+                        media="(min-width: 320px)"
+                        srcset="
+                          ./images/portfolio/portfolio-img4-mobile@1x.jpg 1x,
+                          ./images/portfolio/portfolio-img4-mobile@2x.jpg 2x
+                        "
+                        sizes="(min-width: 320px) 450px"
+                      />
+                      <img
+                        src="./images/portfolio/portfolio-img4-desktop@1x.jpg"
+                        type="jpg"
+                        alt="headphones"
+                        class="overlay__img"
+                      />
+                    </picture>
                     <div class="overlay__box">
                       <p class="overlay__text">
                         Technocrack jest popularną platformą wykorzystywaną do
@@ -214,12 +318,38 @@
               <li class="portfolio-projects__list">
                 <figure class="portfolio-card">
                   <div class="overlay">
-                    <img
-                      src="./images/portfolio/portfolio-img5.jpg"
-                      alt="two boxes"
-                      width="370px"
-                      height="294px"
-                    />
+                    <picture class="overlay__picture">
+                      <source
+                        media="(min-width: 1200px)"
+                        srcset="
+                          ./images/portfolio/portfolio-img5-desktop@1x.jpg 1x,
+                          ./images/portfolio/portfolio-img5-desktop@2x.jpg 2x
+                        "
+                        sizes="(min-width: 1200px) 370px"
+                      />
+                      <source
+                        media="(min-width: 768px)"
+                        srcset="
+                          ./images/portfolio/portfolio-img5-tablet@1x.jpg 1x,
+                          ./images/portfolio/portfolio-img5-tablet@2x.jpg 2x
+                        "
+                        sizes="(min-width: 768px) 354px"
+                      />
+                      <source
+                        media="(min-width: 320px)"
+                        srcset="
+                          ./images/portfolio/portfolio-img5-mobile@1x.jpg 1x,
+                          ./images/portfolio/portfolio-img5-mobile@2x.jpg 2x
+                        "
+                        sizes="(min-width: 320px) 450px"
+                      />
+                      <img
+                        src="./images/portfolio/portfolio-img5-desktop@1x.jpg"
+                        type="jpg"
+                        alt="two boxes"
+                        class="overlay__img"
+                      />
+                    </picture>
                     <div class="overlay__box">
                       <p class="overlay__text">
                         Technocrack jest popularną platformą wykorzystywaną do
@@ -238,12 +368,38 @@
               <li class="portfolio-projects__list">
                 <figure class="portfolio-card">
                   <div class="overlay">
-                    <img
-                      src="./images/portfolio/portfolio-img6.jpg"
-                      alt="monitor with open website"
-                      width="370px"
-                      height="294px"
-                    />
+                    <picture class="overlay__picture">
+                      <source
+                        media="(min-width: 1200px)"
+                        srcset="
+                          ./images/portfolio/portfolio-img6-desktop@1x.jpg 1x,
+                          ./images/portfolio/portfolio-img6-desktop@2x.jpg 2x
+                        "
+                        sizes="(min-width: 1200px) 370px"
+                      />
+                      <source
+                        media="(min-width: 768px)"
+                        srcset="
+                          ./images/portfolio/portfolio-img6-tablet@1x.jpg 1x,
+                          ./images/portfolio/portfolio-img6-tablet@2x.jpg 2x
+                        "
+                        sizes="(min-width: 768px) 354px"
+                      />
+                      <source
+                        media="(min-width: 320px)"
+                        srcset="
+                          ./images/portfolio/portfolio-img6-mobile@1x.jpg 1x,
+                          ./images/portfolio/portfolio-img6-mobile@2x.jpg 2x
+                        "
+                        sizes="(min-width: 320px) 450px"
+                      />
+                      <img
+                        src="./images/portfolio/portfolio-img6-desktop@1x.jpg"
+                        type="jpg"
+                        alt="monitor with open website"
+                        class="overlay__img"
+                      />
+                    </picture>
                     <div class="overlay__box">
                       <p class="overlay__text">
                         Technocrack jest popularną platformą wykorzystywaną do
@@ -266,12 +422,38 @@
               <li class="portfolio-projects__list">
                 <figure class="portfolio-card">
                   <div class="overlay">
-                    <img
-                      src="./images/portfolio/portfolio-img7.jpg"
-                      alt="magazine"
-                      width="370px"
-                      height="294px"
-                    />
+                    <picture class="overlay__picture">
+                      <source
+                        media="(min-width: 1200px)"
+                        srcset="
+                          ./images/portfolio/portfolio-img7-desktop@1x.jpg 1x,
+                          ./images/portfolio/portfolio-img7-desktop@2x.jpg 2x
+                        "
+                        sizes="(min-width: 1200px) 370px"
+                      />
+                      <source
+                        media="(min-width: 768px)"
+                        srcset="
+                          ./images/portfolio/portfolio-img7-tablet@1x.jpg 1x,
+                          ./images/portfolio/portfolio-img7-tablet@2x.jpg 2x
+                        "
+                        sizes="(min-width: 768px) 354px"
+                      />
+                      <source
+                        media="(min-width: 320px)"
+                        srcset="
+                          ./images/portfolio/portfolio-img7-mobile@1x.jpg 1x,
+                          ./images/portfolio/portfolio-img7-mobile@2x.jpg 2x
+                        "
+                        sizes="(min-width: 320px) 450px"
+                      />
+                      <img
+                        src="./images/portfolio/portfolio-img7-desktop@1x.jpg"
+                        type="jpg"
+                        alt="magazine"
+                        class="overlay__img"
+                      />
+                    </picture>
                     <div class="overlay__box">
                       <p class="overlay__text">
                         Technocrack jest popularną platformą wykorzystywaną do
@@ -292,12 +474,38 @@
               <li class="portfolio-projects__list">
                 <figure class="portfolio-card">
                   <div class="overlay">
-                    <img
-                      src="./images/portfolio/portfolio-img8.jpg"
-                      alt="label tag"
-                      width="370px"
-                      height="294px"
-                    />
+                    <picture class="overlay__picture">
+                      <source
+                        media="(min-width: 1200px)"
+                        srcset="
+                          ./images/portfolio/portfolio-img8-desktop@1x.jpg 1x,
+                          ./images/portfolio/portfolio-img8-desktop@2x.jpg 2x
+                        "
+                        sizes="(min-width: 1200px) 370px"
+                      />
+                      <source
+                        media="(min-width: 768px)"
+                        srcset="
+                          ./images/portfolio/portfolio-img8-tablet@1x.jpg 1x,
+                          ./images/portfolio/portfolio-img8-tablet@2x.jpg 2x
+                        "
+                        sizes="(min-width: 768px) 354px"
+                      />
+                      <source
+                        media="(min-width: 320px)"
+                        srcset="
+                          ./images/portfolio/portfolio-img8-mobile@1x.jpg 1x,
+                          ./images/portfolio/portfolio-img8-mobile@2x.jpg 2x
+                        "
+                        sizes="(min-width: 320px) 450px"
+                      />
+                      <img
+                        src="./images/portfolio/portfolio-img8-desktop@1x.jpg"
+                        type="jpg"
+                        alt="label tag"
+                        class="overlay__img"
+                      />
+                    </picture>
                     <div class="overlay__box">
                       <p class="overlay__text">
                         Technocrack jest popularną platformą wykorzystywaną do
@@ -316,12 +524,38 @@
               <li class="portfolio-projects__list">
                 <figure class="portfolio-card">
                   <div class="overlay">
-                    <img
-                      src="./images/portfolio/portfolio-img9.jpg"
-                      alt="laptop with open app"
-                      width="370px"
-                      height="294px"
-                    />
+                    <picture class="overlay__picture">
+                      <source
+                        media="(min-width: 1200px)"
+                        srcset="
+                          ./images/portfolio/portfolio-img9-desktop@1x.jpg 1x,
+                          ./images/portfolio/portfolio-img9-desktop@2x.jpg 2x
+                        "
+                        sizes="(min-width: 1200px) 370px"
+                      />
+                      <source
+                        media="(min-width: 768px)"
+                        srcset="
+                          ./images/portfolio/portfolio-img9-tablet@1x.jpg 1x,
+                          ./images/portfolio/portfolio-img9-tablet@2x.jpg 2x
+                        "
+                        sizes="(min-width: 768px) 354px"
+                      />
+                      <source
+                        media="(min-width: 320px)"
+                        srcset="
+                          ./images/portfolio/portfolio-img9-mobile@1x.jpg 1x,
+                          ./images/portfolio/portfolio-img9-mobile@2x.jpg 2x
+                        "
+                        sizes="(min-width: 320px) 450px"
+                      />
+                      <img
+                        src="./images/portfolio/portfolio-img9-desktop@1x.jpg"
+                        type="jpg"
+                        alt="laptop with open app"
+                        class="overlay__img"
+                      />
+                    </picture>
                     <div class="overlay__box">
                       <p class="overlay__text">
                         Technocrack jest popularną platformą wykorzystywaną do
@@ -347,7 +581,7 @@
     <!--STOPKA-->
     <footer class="page-footer reset-margin">
       <div class="container page-footer-address">
-        <div class="">
+        <div class="page-footer-address__wrapper">
           <a href="./index.html" class="logo logo--footer"
             ><span class="logo--highlight">Web</span>Studio</a
           >
@@ -416,23 +650,25 @@
             class="page-footer-newsletter__text"
             >Zapisz się do newslettera</label
           >
-          <input
-            id="user-email-newsletter"
-            type="email"
-            name="user-email-newsletter"
-            placeholder="E-mail"
-            class="page-footer-newsletter__input"
-          />
+          <div class="page-footer-newsletter__wrapper">
+            <input
+              id="user-email-newsletter"
+              type="email"
+              name="user-email-newsletter"
+              placeholder="E-mail"
+              class="page-footer-newsletter__input"
+            />
 
-          <button type="submit" class="page-footer-newsletter__button">
-            Zapisz się<svg
-              width="24px"
-              height="24px"
-              class="page-footer-newsletter__icon"
-            >
-              <use href="./images/icons.svg#icon-send-newsletter"></use>
-            </svg>
-          </button>
+            <button type="submit" class="page-footer-newsletter__button">
+              Zapisz się<svg
+                width="24px"
+                height="24px"
+                class="page-footer-newsletter__icon"
+              >
+                <use href="./images/icons.svg#icon-send-newsletter"></use>
+              </svg>
+            </button>
+          </div>
         </form>
       </div>
     </footer>
